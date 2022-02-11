@@ -60,11 +60,6 @@ function LineForm(props) {
                     <Form.Text className="text-muted"></Form.Text>
                 </Form.Group>
             </Col>
-                <Col>
-                {fileDisplayImg &&
-                    <a href={fileDisplayImg} target="_blank">View</a>
-                }
-                </Col>
             <Col md={6}>
                 {(userLines.length !== 1) ? <IconButton onClick={() => removeLineRow(ind)} color="primary" aria-label="add row" className="add-btn">
                         <DeleteIcon />
